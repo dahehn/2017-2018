@@ -1,7 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: hehnm
- * Date: 21.09.2017
- * Time: 11:40
- */
+echo 'Hello World';
+phpinfo();
+$number1=1;
+$number2=23;
+echo $number1+$number2;
+ ?>
