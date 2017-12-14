@@ -8,11 +8,11 @@
 
 class user
 {
-private $username;
-private $password;
-private $mail;
-private $userType;
-private $loggedIn;
+private $owner;
+private $type;
+private $runtime;
+private $description;
+private $year;
 
 
     public function __construct()
@@ -22,107 +22,94 @@ private $loggedIn;
     /**
      * @return mixed
      */
-    public function getUsername()
+    public function getOwner()
     {
-        return $this->username;
+        return $this->owner;
     }
 
-
-    public function setUsername($username)
+    /**
+     * @param mixed $owner
+     */
+    public function setOwner($owner)
     {
-        if($username=='')
-        {
+        if($owner =='')
             return false;
-        }
-        $this->username = $username;
-        return true;
-    }
-
-
-    public function getPassword()
-    {
-        return $this->password;
-    }
-
-
-    public function setPassword($password)
-    {
-        if(strlen($password)< 8)
-            return false;
-        $this->password = $password;
-        return true;
-    }
-
-
-        public function getMail()
-    {
-        return $this->mail;
-    }
-
-
-    public function setMail($mail)
-    {
-        if ($mail=='')
-            return false;
-        $this->mail = $mail;
+        $this->owner = $owner;
         return true;
     }
 
     /**
      * @return mixed
      */
-    public function getUserType()
+    public function getType()
     {
-        return $this->userType;
+        return $this->type;
     }
 
-
-    public function setUserType($userType)
+    /**
+     * @param mixed $type
+     */
+    public function setType($type)
     {
-        if($userType !='A'||$userType !='G'||$userType!='U')
+        if($type !='G' || $type !='S' || $type =! 'K' || $type != 'D')
             return false;
-        $this->userType = $userType;
+        $this->type = $type;
         return true;
     }
 
     /**
      * @return mixed
      */
-    public function getLoggedIn()
+    public function getRuntime()
     {
-        return $this->loggedIn;
+        return $this->runtime;
     }
 
     /**
-     * @param mixed $loggedIn
+     * @param mixed $runtime
      */
-    public function setLoggedIn($loggedIn)
+    public function setRuntime($runtime)
     {
-        $this->loggedIn = $loggedIn;
+        if($runtime<0)
+            return false;
+        $this->runtime = $runtime;
+        return true;
     }
 
-    public function checkCr($username,$password)
+    /**
+     * @return mixed
+     */
+    public function getDescription()
     {
-        if($this->getUsername()=='' || $this->getPassword()=='')
-        {
+        return $this->description;
+    }
+
+    /**
+     * @param mixed $description
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getYear()
+    {
+        return $this->year;
+    }
+
+    /**
+     * @param mixed $year
+     */
+    public function setYear($year)
+    {
+        if($year<2000 || $year > 2017)
             return false;
-        }
-    if($username==$this->getUsername()&&$password==$this->getPassword())
+        $this->year = $year;
         return true;
-    return false;
     }
-    public  function login()
-    {
-        $this->setLoggedIn(true);
-    }
-    public  function logout()
-    {
-        $this->setLoggedIn(false);
-    }
-    public function isLoggedIn()
-    {
-        if ($this->getLoggedIn()==true)
-            return true;
-        return false;
-    }
+
+
 }
