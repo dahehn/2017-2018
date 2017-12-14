@@ -4,7 +4,7 @@
 <form method="post">
     <input type="text" name="owner" placeholder="your Name">
     <br>
-    <label>Describe your account</label><input type="text" name="description" placeholder="optional">
+    <label>Describe your account :</label><input type="text" name="description" placeholder="optional">
     <br>
     <select>
         <option name="acc" value="g">Girokonto</option>
