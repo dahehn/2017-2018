@@ -32,7 +32,7 @@ class account
      */
     public function setOwner($owner)
     {
-        if($owner =='')
+        if($owner == '')
             return false;
         $this->owner = $owner;
         return true;
