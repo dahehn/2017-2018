@@ -7,5 +7,10 @@ if(!isset($_SESSION['Account']))
 $Account =$_SESSION['Account'];
 if(!isset($_POST['save']))
 {
-    if ($Account->getOwner())
+    if ($Account->setOwner($_POST['owner']) && $Account->setRuntime($_POST['runtime']) && $Account->setYear($_POST['year'])){
+
+    }
+
+
+
 }
