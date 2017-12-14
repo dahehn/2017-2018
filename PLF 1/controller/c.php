@@ -1,10 +1,9 @@
 <?php
-if(!isset($_SESSION['Account']))
+
+if(!isset($_SESSION['account']))
 {
-    $_SESSION['Account']= new Account();
-    require_once 'view/account_view.php';
+    $_SESSION['account'] = new Account();
 }
-$Account =$_SESSION['Account'];
 if(!isset($_POST['save']))
 {
     if ($Account->setOwner($_POST['owner']) && $Account->setRuntime($_POST['runtime']) && $Account->setYear($_POST['year'])){

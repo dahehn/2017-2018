@@ -1,4 +1,5 @@
 <?php
+
 class Account
 {
 
@@ -9,6 +10,12 @@ private $description;
 private $year;
 private $runtime;
 
+    /**
+     * Account constructor.
+     */
+    public function __construct()
+    {
+    }
     /**
      * @param mixed $type
      */
