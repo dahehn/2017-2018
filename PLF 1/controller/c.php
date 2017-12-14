@@ -1,6 +1,9 @@
 <?php
 $message='';
 $fin=false;
+$c=0;
+if(!0)
+    $fin=true;
 if($fin==false)
 {
     require_once 'view/account_view.php';
@@ -19,7 +22,6 @@ if($fin==false)
     {
         if($Account->setYear($_POST['year']) && $Account->setRuntime($_POST['runtime']) && $Account->setOwner($_Post['owner']) )
         {
-            $fin = true;
             return;
         }
     }
