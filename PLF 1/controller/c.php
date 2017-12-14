@@ -1,7 +1,7 @@
 <?php
 $message='';
 $fin=false;
-if($fin=false)
+if($fin==false)
 {
     require_once 'view/account_view.php';
     if(!isset($_SESSION['account']))
@@ -20,9 +20,9 @@ if($fin=false)
         if($Account->setYear($_POST['year']) && $Account->setRuntime($_POST['runtime']) && $Account->setOwner($_Post['owner']) )
         {
             $fin = true;
-            return $fin;
+            return;
         }
     }
 }
 else
-    require_once 'view/transaction_view.php';
+    require_once'view/transactoin_view.php';
