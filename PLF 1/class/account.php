@@ -2,115 +2,127 @@
 /**
  * Created by PhpStorm.
  * User: Wörk
- * Date: 14.12.2017
- * Time: 11:38
+ * Date: 11.12.2017
+ * Time: 11:52
  */
 
-class account
+class user
 {
-    private $type;
-    private $owner;
-    private $description;
-    private $year;
-    private $runtime;
+private $username;
+private $password;
+private $mail;
+private $userType;
+private $loggedIn;
 
-    /**
-     * Account constructor.
-     */
+
     public function __construct()
     {
-    }    /**
- * @param mixed $type
- */
-    public function setType($type)
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUsername()
     {
-        if($type != 'Girokonto'|| $type != 'Sparkonto' || $type != 'Kreditkonto' || $type != 'Depot')
+        return $this->username;
+    }
+
+
+    public function setUsername($username)
+    {
+        if($username=='')
+        {
             return false;
-        $this->type = $type;
+        }
+        $this->username = $username;
+        return true;
+    }
+
+
+    public function getPassword()
+    {
+        return $this->password;
+    }
+
+
+    public function setPassword($password)
+    {
+        if(strlen($password)< 8)
+            return false;
+        $this->password = $password;
+        return true;
+    }
+
+
+        public function getMail()
+    {
+        return $this->mail;
+    }
+
+
+    public function setMail($mail)
+    {
+        if ($mail=='')
+            return false;
+        $this->mail = $mail;
         return true;
     }
 
     /**
-     * @param mixed $owner
+     * @return mixed
      */
-    public function setOwner($owner)
+    public function getUserType()
     {
-        if($owner =='')
-            return false;
-        $this->owner = $owner;
-        return true;
+        return $this->userType;
     }
 
-    /**
-     * @param mixed $description
-     */
-    public function setDescription($description)
-    {
 
-        $this->description = $description;
-    }
-
-    /**
-     * @param mixed $year
-     */
-    public function setYear($year)
+    public function setUserType($userType)
     {
-        if ($year >2000 || $year < 2017)
+        if($userType !='A'||$userType !='G'||$userType!='U')
             return false;
-        $this->year = $year;
-        return true;
-    }
-
-    /**
-     * @param mixed $runtime
-     */
-    public function setRuntime($runtime)
-    {
-        if($runtime <0)
-            return false;
-        $this->runtime = $runtime;
+        $this->userType = $userType;
         return true;
     }
 
     /**
      * @return mixed
      */
-    public function getType()
+    public function getLoggedIn()
     {
-        return $this->type;
+        return $this->loggedIn;
     }
 
     /**
-     * @return mixed
+     * @param mixed $loggedIn
      */
-    public function getOwner()
+    public function setLoggedIn($loggedIn)
     {
-        return $this->owner;
+        $this->loggedIn = $loggedIn;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getDescription()
+    public function checkCr($username,$password)
     {
-        return $this->description;
+        if($this->getUsername()=='' || $this->getPassword()=='')
+        {
+            return false;
+        }
+    if($username==$this->getUsername()&&$password==$this->getPassword())
+        return true;
+    return false;
     }
-
-    /**
-     * @return mixed
-     */
-    public function getYear()
+    public  function login()
     {
-        return $this->year;
+        $this->setLoggedIn(true);
     }
-
-    /**
-     * @return mixed
-     */
-    public function getRuntime()
+    public  function logout()
     {
-        return $this->runtime;
+        $this->setLoggedIn(false);
     }
-
-
+    public function isLoggedIn()
+    {
+        if ($this->getLoggedIn()==true)
+            return true;
+        return false;
+    }
 }
