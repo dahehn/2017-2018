@@ -2,17 +2,17 @@
 /**
  * Created by PhpStorm.
  * User: Wörk
- * Date: 11.12.2017
- * Time: 11:52
+ * Date: 14.12.2017
+ * Time: 11:50
  */
 
 class account
 {
-private $owner;
-private $type;
-private $runtime;
-private $description;
-private $year;
+    private $owner;
+    private $type;
+    private $runtime;
+    private $description;
+    private $year;
 
 
     public function __construct()
