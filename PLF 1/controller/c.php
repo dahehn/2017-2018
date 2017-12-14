@@ -5,12 +5,11 @@ if($login==true)
 
 if(!isset($_SESSION['account']))
 {
-    $_SESSION['account']= new account();
-
-
+    $_SESSION['account'] = new account();
 }
 $Account = $_SESSION['account'];
 if(!isset($_POST['save']))
 {
-
+    if($Account->setOwner($_POST['owner']))
+        return;
 }
