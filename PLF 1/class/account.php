@@ -1,24 +1,27 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Wörk
+ * Date: 14.12.2017
+ * Time: 11:38
+ */
 
-class Account
+class account
 {
-
-//fields
-private $type;
-private $owner;
-private $description;
-private $year;
-private $runtime;
+    private $type;
+    private $owner;
+    private $description;
+    private $year;
+    private $runtime;
 
     /**
      * Account constructor.
      */
     public function __construct()
     {
-    }
-    /**
-     * @param mixed $type
-     */
+    }    /**
+ * @param mixed $type
+ */
     public function setType($type)
     {
         if($type != 'Girokonto'|| $type != 'Sparkonto' || $type != 'Kreditkonto' || $type != 'Depot')
@@ -108,9 +111,6 @@ private $runtime;
     {
         return $this->runtime;
     }
-
-
-
 
 
 }

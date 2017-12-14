@@ -2,7 +2,7 @@
 
 if(!isset($_SESSION['account']))
 {
-    $_SESSION['account'] = new Account();
+    $_SESSION['account'] = new account();
 }
 if(!isset($_POST['save']))
 {
