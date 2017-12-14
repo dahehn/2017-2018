@@ -7,9 +7,10 @@ if(!isset($_SESSION['account']))
 {
     $_SESSION['account'] = new account();
 }
-$Account = $_SESSION['account'];
+$Account =&$_SESSION['account'];
+
 if(!isset($_POST['save']))
 {
-    if($Account->setOwner($_POST['owner']))
+    if($Account->setYear($_POST['year']))
         return;
 }
