@@ -21,8 +21,10 @@ private $runtime;
      */
     public function setType($type)
     {
-
+        if($type != 'Girokonto'|| $type != 'Sparkonto' || $type != 'Kreditkonto' || $type != 'Depot')
+            return false;
         $this->type = $type;
+        return true;
     }
 
     /**
@@ -30,7 +32,10 @@ private $runtime;
      */
     public function setOwner($owner)
     {
+        if($owner =='')
+            return false;
         $this->owner = $owner;
+        return true;
     }
 
     /**
@@ -38,6 +43,7 @@ private $runtime;
      */
     public function setDescription($description)
     {
+
         $this->description = $description;
     }
 
@@ -46,7 +52,10 @@ private $runtime;
      */
     public function setYear($year)
     {
+        if ($year >2000 || $year < 2017)
+            return false;
         $this->year = $year;
+        return true;
     }
 
     /**
@@ -54,12 +63,52 @@ private $runtime;
      */
     public function setRuntime($runtime)
     {
+        if($runtime <0)
+            return false;
         $this->runtime = $runtime;
+        return true;
     }
 
-//ctor
+    /**
+     * @return mixed
+     */
+    public function getType()
+    {
+        return $this->type;
+    }
 
-//properties
+    /**
+     * @return mixed
+     */
+    public function getOwner()
+    {
+        return $this->owner;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getYear()
+    {
+        return $this->year;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getRuntime()
+    {
+        return $this->runtime;
+    }
+
 
 //methods
 
