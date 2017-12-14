@@ -1,7 +1,2 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Wörk
- * Date: 14.12.2017
- * Time: 11:10
- */
+require_once 'view/account_view.php';
