@@ -14,7 +14,7 @@
     </select>
     <input type="text" placeholder="Eröffnungsjahr" name="year">
     <input type="text" placeholder="Laufzeit" name="runtime">
-    <input type="button" name="save" value="Save">
+    <input type='submit' name="save" value="Save">
 </form>
 </body>
 </html>
