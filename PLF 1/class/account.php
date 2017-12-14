@@ -6,7 +6,7 @@
  * Time: 11:52
  */
 
-class user
+class account
 {
 private $owner;
 private $type;
