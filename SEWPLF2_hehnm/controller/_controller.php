@@ -54,7 +54,7 @@ if(isset($_POST['change']))
 }
 if(isset($_POST['save_changed']))
 {
-
+ $product=$products
 }
 $money = 0;
 foreach ($products as $product)
