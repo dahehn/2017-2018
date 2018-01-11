@@ -29,6 +29,7 @@ if(isset($_POST['save']))
     if(array_key_exists($_POST['newName'],$products))
     {
         $message='Product already exists';
+        require_once 'views/new_view..php';
         return;
     }
     $product = new Product($_POST['newName'],$_POST['newPrice'],$_POST['newAmount']);
