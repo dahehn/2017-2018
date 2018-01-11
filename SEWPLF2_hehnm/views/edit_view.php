@@ -1,4 +1,9 @@
-
+<?php
+function print_textBox($name,$value)
+{
+    echo ''
+}
+?>
 <html>
 <body>
 <h1>Product:</h1>
