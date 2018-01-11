@@ -2,7 +2,7 @@
 $message='';
 $fin=false;
 $c=0;
-if(!0)
+if(c!=0)
     $fin=true;
 if($fin==false)
 {
@@ -22,6 +22,7 @@ if($fin==false)
     {
         if($Account->setYear($_POST['year']) && $Account->setRuntime($_POST['runtime']) && $Account->setOwner($_Post['owner']) )
         {
+            $c +=1;
             return;
         }
     }
