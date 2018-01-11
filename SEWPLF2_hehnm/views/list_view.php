@@ -14,3 +14,8 @@ function print_table($products)
     }
 }
 ?>
+<html>
+<form>
+    <?php print_table()?>
+</form>
+</html>
