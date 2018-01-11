@@ -14,7 +14,8 @@ function print_textBox($name,$value)
     <br>
     Price<?php echo'<input type="text" value="'.$product->getPrice().'" name="chnaged"'?>
     <br>
-    <input type="submit" name="save" value="Save">
+    Amount<?php echo '<input type="text" value"'.$product->getAmount().'" name="amoun"' ?>
+    <input type="submit" name="save_changed" value="Save">
     <input type="submit" name="cancel" value="Cancel">'
 
 </form>
