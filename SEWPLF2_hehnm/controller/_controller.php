@@ -23,6 +23,7 @@ if(isset($_POST['delete']))
         $message = 'No gift selected';
     }
 }
+
 if(isset($_POST['save']))
 {
     if(array_key_exists($_POST['newName'],$products))
@@ -36,7 +37,19 @@ if(isset($_POST['save']))
     require_once 'views/list_view.php';
     return;
 }
-$money = 0;
 
+if(isset($_POST['change']))
+{
+    if(isset($_POST['select']))
+    {
+        $id = $_POST['select'];
+
+    }
+}
+$money = 0;
+foreach ($products as $product)
+{
+    $money = $money + $product->getValue();
+}
 $message = 'Warenwert'.$money.'  Anzahl der Produkte';
 require_once 'views/list_view.php';
