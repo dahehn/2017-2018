@@ -24,6 +24,11 @@ if(isset($_POST['delete']))
 }
 if(isset($_POST['save']))
 {
-    if($products)
+    if(array_key_exists($_POST['newName'],$products))
+    {
+        $message='Product already exists';
+        return;
+    }
+
 }
 require_once 'views/list_view.php';

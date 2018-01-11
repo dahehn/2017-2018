@@ -11,5 +11,6 @@
     <input type="submit" name="save" value="Save">
     <input type="submit" name="cancel" value="Cancel">
 </form>
+<?php echo $message?>
 </body>
 </html>
