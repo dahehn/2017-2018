@@ -1,7 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Wörk
- * Date: 11.01.2018
- * Time: 10:47
- */
+if(!isset($_SESSION['products']))
+{
+    $products = [];
+    $_SESSION['products'] = $products;
+}
+require_once 'views/list_view.php';

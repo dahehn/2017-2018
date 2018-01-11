@@ -1,7 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Wörk
- * Date: 11.01.2018
- * Time: 10:47
- */
+
+require_once 'classes/Product.php';
+session_start();
+require_once 'controller/_controller.php';
