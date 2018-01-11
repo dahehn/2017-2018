@@ -52,4 +52,10 @@ class Product
         $this->amount = $amount;
     }
 
+    //methods
+    public function getValue()
+    {
+        $money = $this->getValue()*$this->getAmount();
+        return $money;
+    }
 }
