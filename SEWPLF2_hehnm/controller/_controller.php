@@ -15,13 +15,12 @@ if(isset($_POST['new']))
 }
 if(isset($_POST['delete']))
 {
-    if (isset($_POST['select']))
-    {
-            $id = $_POST['select'];
-            $gift = $products[$id];
-            $title = "Change the gift:";
-            require_once 'views/new_view.php';
-            return;
+    if (isset($_POST['select'])) {
+        $id = $_POST['select'];
+        unset($products[$id]);
+    }
+    else {
+        $message = 'No gift selected';
     }
 }
 if(isset($_POST['save']))
