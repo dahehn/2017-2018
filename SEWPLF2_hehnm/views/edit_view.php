@@ -1,4 +1,7 @@
-
+<?php
+function print($products)
+echo '<input type="text" value="'.$products[$id]->getName.'">'
+?>
 <html>
 <body>
 <h1>Product:</h1>
