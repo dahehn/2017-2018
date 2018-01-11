@@ -7,6 +7,7 @@
     Price<input type="text" name="newPrice">
     <br>
     Amount<input type="text" name="newAmount">
+    <br>
     <input type="submit" name="save" value="Save">
     <input type="submit" name="cancel" value="Cancel">
 </form>

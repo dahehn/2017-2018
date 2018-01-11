@@ -1,4 +1,5 @@
 <?php
+$message;
 if(!isset($_SESSION['products']))
 {
     $products = [];
@@ -12,6 +13,17 @@ if(isset($_POST['new']))
 }
 if(isset($_POST['delete']))
 {
-    if ($_POST[''])
+    if (isset($_POST['select']))
+    {
+            $id = $_POST['select'];
+            $gift = $products[$id];
+            $title = "Change the gift:";
+            require_once 'views/new_view.php';
+            return;
+    }
+}
+if(isset($_POST['save']))
+{
+    if($products)
 }
 require_once 'views/list_view.php';
