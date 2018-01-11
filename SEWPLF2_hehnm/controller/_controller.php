@@ -43,7 +43,8 @@ if(isset($_POST['change']))
     if(isset($_POST['select']))
     {
         $id = $_POST['select'];
-
+        $product = $products[$id];
+        require_once 'views/edit_view.php';
     }
 }
 $money = 0;
@@ -51,5 +52,5 @@ foreach ($products as $product)
 {
     $money = $money + $product->getValue();
 }
-$message = 'Warenwert'.$money.'  Anzahl der Produkte';
+$message = 'Warenwert'.$money.'  Anzahl der Produkte'.count($products);
 require_once 'views/list_view.php';
