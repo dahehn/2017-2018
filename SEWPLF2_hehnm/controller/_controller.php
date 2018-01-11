@@ -7,6 +7,7 @@ if(!isset($_SESSION['products']))
     $_SESSION['products'] = $products;
 }
 $products =& $_SESSION['products'];
+
 if(isset($_POST['new']))
 {
     $message='';
@@ -54,7 +55,9 @@ if(isset($_POST['change']))
 }
 if(isset($_POST['save_changed']))
 {
- $product=$products
+ $product =& $products[$_POST['id']];
+ $product -> setPrice($_POST['changed']);
+ $product -> setAmount($_POST['amoun'])
 }
 $money = 0;
 foreach ($products as $product)
