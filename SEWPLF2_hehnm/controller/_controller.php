@@ -45,6 +45,11 @@ if(isset($_POST['change']))
         $id = $_POST['select'];
         $product = $products[$id];
         require_once 'views/edit_view.php';
+        return;
+    }
+    else
+    {
+       $message = 'select a product';
     }
 }
 $money = 0;

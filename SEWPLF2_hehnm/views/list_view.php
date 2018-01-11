@@ -15,12 +15,11 @@ function print_table($products)
 ?>
 <html>
 <body>
+
 <form method="post">
     <p>
         <?php print_table($_SESSION['products'])?>
     </p>
-</form>
-<form method="post">
     <br>
     <input type="submit" name="new" value="New">
     <input type="submit" name="delete" value="Delete">
