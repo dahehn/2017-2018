@@ -51,13 +51,16 @@ if(isset($_POST['change']))
     else
     {
        $message = 'select a product';
+
     }
 }
 if(isset($_POST['save_changed']))
 {
  $product =& $products[$_POST['id']];
  $product -> setPrice($_POST['changed']);
- $product -> setAmount($_POST['amoun'])
+ $product -> setAmount($_POST['amoun']);
+ require_once 'views/list_view.php';
+ return;
 }
 $money = 0;
 foreach ($products as $product)
