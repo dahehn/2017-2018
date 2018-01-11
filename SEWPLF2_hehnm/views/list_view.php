@@ -1,7 +1,7 @@
 <?php
 function print_table($products)
 {
-    if(count($products)>0)
+    if(count($products) > 0)
     {
         echo '<table border="1">';
         echo '<th>Name</th> <th>Price</th> <th>Amount</th> <th>Select</th>';
