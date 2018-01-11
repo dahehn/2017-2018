@@ -55,7 +55,7 @@ class Product
     //methods
     public function getValue()
     {
-        $money = $this->getValue()*$this->getAmount();
+        $money = $this->price*$this->amount;
         return $money;
     }
 }
