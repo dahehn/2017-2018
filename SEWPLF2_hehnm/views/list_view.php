@@ -26,5 +26,8 @@ function print_table($products)
     <input type="submit" name="delete" value="Delete">
     <input type="submit" name="change" value="Change">
 </form>
+<p>
+    <?php echo $message?>
+</p>
 </body>
 </html>

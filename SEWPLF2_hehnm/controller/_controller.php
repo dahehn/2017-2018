@@ -38,9 +38,11 @@ if(isset($_POST['save']))
     return;
 }
 $money = 0;
-foreach ($products as $product)
+$count=count($products);
+while ($count>0)
 {
     $money = $money+$product->getValue();
+    $count--;
 }
-$message = 'Warenwert'.$money.'  Anzahl der Produkte'.count($products);
+$message = 'Warenwert'.$money.'  Anzahl der Produkte'.$count;
 require_once 'views/list_view.php';
