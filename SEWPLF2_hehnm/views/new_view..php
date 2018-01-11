@@ -1,6 +1,7 @@
 <html>
 <body>
 <h1>Product:</h1>
+<?php echo $message?>
 <form method="post">
     Name<input type="text" name="newName">
     <br>
@@ -11,6 +12,6 @@
     <input type="submit" name="save" value="Save">
     <input type="submit" name="cancel" value="Cancel">
 </form>
-<?php echo $message?>
+
 </body>
 </html>

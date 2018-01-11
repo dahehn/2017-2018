@@ -8,6 +8,7 @@ if(!isset($_SESSION['products']))
 $products =$_SESSION['products'];
 if(isset($_POST['new']))
 {
+    $message='';
     require_once 'views/new_view..php';
     return;
 }
@@ -30,7 +31,7 @@ if(isset($_POST['save']))
         return;
     }
     $product = new Product($_POST['newName'],$_POST['newPrice'],$_POST['newAmount']);
-    $products[$product ->getName()]=$product;
+    $products[$product ->getName()] = $product;
     require_once 'views/list_view.php';
     return;
 }
