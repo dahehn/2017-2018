@@ -10,7 +10,6 @@ function print_table($products)
             echo '<tr><td>'. $product->getName().'</td><td>'.$product->getPrice().'</td><td>'. $product->getAmount().'</td><td><input type="radio" name="select" value="'. $product->getName() .'"></td></tr>';
         }
         echo '</table>';
-        echo '<input type="submit" name="delete" value="Remove Account">';
     }
 }
 ?>

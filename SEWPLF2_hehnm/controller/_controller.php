@@ -1,11 +1,12 @@
 <?php
 $message;
+
 if(!isset($_SESSION['products']))
 {
     $products = [];
-    $_SESSION['products'] =& $products;
+    $_SESSION['products'] = $products;
 }
-$products =$_SESSION['products'];
+$products =& $_SESSION['products'];
 if(isset($_POST['new']))
 {
     $message='';
