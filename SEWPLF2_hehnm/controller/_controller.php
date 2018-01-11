@@ -29,6 +29,10 @@ if(isset($_POST['save']))
         $message='Product already exists';
         return;
     }
-
+    $product = new Product($_POST['newName'],$_POST['newPrice'],$_POST['newAmount']);
+    $products[$product ->getName()]=$product;
+    require_once 'views/list_view.php';
+    return;
 }
+
 require_once 'views/list_view.php';
