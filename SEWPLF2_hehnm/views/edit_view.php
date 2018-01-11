@@ -1,7 +1,7 @@
 <?php
 function print_textBox($name,$value)
 {
-    echo ''
+    echo '<input type="text" name="' . $name . '" value="' . $value . '"/>';
 }
 ?>
 <html>
@@ -9,12 +9,8 @@ function print_textBox($name,$value)
 <h1>Product:</h1>
 <?php echo $message?>
 <form method="post">
-    <?php
-    'Name<input type="text" name="newName" value="'.product->getName().'">
-    <br>
-    Price<input type="text" name="newPrice">
-    <br>
-    Amount<input type="text" name="newAmount">
+    <?php echo '<input type="text" value="'.$product->getName().'" name="id" disabled >'; ?>
+    <input type="text" disabled>
     <br>
     <input type="submit" name="save" value="Save">
     <input type="submit" name="cancel" value="Cancel">'
