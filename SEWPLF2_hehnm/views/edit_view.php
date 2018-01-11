@@ -1,6 +1,6 @@
 <?php
 function print($products)
-echo '<input type="text" value="'.$products[$id]->getName.'">'
+echo <input type="text" value="'.$products[$id]->getName().'">
 ?>
 <html>
 <body>

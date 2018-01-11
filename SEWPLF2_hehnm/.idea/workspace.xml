@@ -25,10 +25,12 @@
         <entry file="file://$PROJECT_DIR$/views/edit_view.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="57" lean-forward="true" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+              <caret line="2" column="62" lean-forward="false" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
               <folding>
-                <marker date="1515667467206" expanded="true" signature="103:164" ph="..." />
-                <marker date="1515667467206" expanded="true" signature="110:164" ph="..." />
+                <marker date="1515667523024" expanded="true" signature="103:164" ph="..." />
+                <marker date="1515667523024" expanded="true" signature="103:186" ph="..." />
+                <marker date="1515667523024" expanded="true" signature="110:164" ph="..." />
+                <marker date="1515667523024" expanded="true" signature="171:186" ph="..." />
               </folding>
             </state>
           </provider>
@@ -155,12 +157,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515663996539</updated>
-      <workItem from="1515663997743" duration="3456000" />
+      <workItem from="1515663997743" duration="3518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3456000" />
+    <option name="totallyTimeSpent" value="3518000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -239,10 +241,12 @@
     <entry file="file://$PROJECT_DIR$/views/edit_view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="57" lean-forward="true" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+          <caret line="2" column="62" lean-forward="false" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
           <folding>
-            <marker date="1515667467206" expanded="true" signature="103:164" ph="..." />
-            <marker date="1515667467206" expanded="true" signature="110:164" ph="..." />
+            <marker date="1515667523024" expanded="true" signature="103:164" ph="..." />
+            <marker date="1515667523024" expanded="true" signature="103:186" ph="..." />
+            <marker date="1515667523024" expanded="true" signature="110:164" ph="..." />
+            <marker date="1515667523024" expanded="true" signature="171:186" ph="..." />
           </folding>
         </state>
       </provider>
