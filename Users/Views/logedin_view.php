@@ -21,20 +21,25 @@ function print_table($users)
     ?>
 </h1>
 <body>
-<h3>All users:</h3>
+
 
 <form method="post">
 <p>
     <?php
-    if($count = 1)
+    if($user -> getUserType()=='A')
+    {
+        echo '<h3>All Users:</h3>';
         print_table($_SESSION['users']);
+    }
+
     ?>
 </p>
 </form>
 <p><?php
     echo $message;
     echo $user -> getUsername();
-    ?></p>
+    ?>
+</p>
 <form method="post">
     <input type="submit" name="logout" value="Logout">
 </form>

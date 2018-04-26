@@ -46,7 +46,6 @@ if(isset($_POST['register']))
 
 if(isset($_POST['finish']))
 {
-    $count = 0;
     $user = new User();
 
     if(!$user ->setEmail($_POST['e-mail']))
@@ -93,7 +92,15 @@ if(isset($_POST['logout']))
     return;
 }
 
-if(count($users)>0) {
+if(isset($_POST['delete']))
+{
+    if(isset($_POST['select']))
+    {
+        unset($users[$_POST['select']]);
+    }
+
+}
+if(count($users) > 0) {
     require_once 'Views/login_view.php';
 }
 else

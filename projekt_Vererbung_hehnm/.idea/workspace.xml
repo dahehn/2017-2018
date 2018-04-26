@@ -17,25 +17,8 @@
       <change beforePath="" afterPath="$PROJECT_DIR$/../Vererbung1/views/market_view.php" />
       <change beforePath="" afterPath="$PROJECT_DIR$/../Vererbung1/views/reg_view.php" />
       <change beforePath="" afterPath="$PROJECT_DIR$/../gitcommit-stunde.bat" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/projekt_Vererbung_hehnm.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/classes/Customer.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/classes/PDOC.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/classes/Product.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/classes/Product_con.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/classes/Supplier.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/classes/User.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/classes/User_con.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cont/_base.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/index.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/view/add_view.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/view/loggin_v.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/view/market_v.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/view/register_view.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/view/role_view.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/view/supplier_view.php" />
       <change beforePath="$PROJECT_DIR$/../SEWPLF2_hehnm/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../SEWPLF2_hehnm/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/../SEWPLF2_hehnm/classes/Product.php" afterPath="$PROJECT_DIR$/../SEWPLF2_hehnm/classes/Product.php" />
       <change beforePath="$PROJECT_DIR$/../SEWPLF2_hehnm/views/edit_view.php" afterPath="$PROJECT_DIR$/../SEWPLF2_hehnm/views/edit_view.php" />
@@ -353,15 +336,24 @@
       <workItem from="1524078656961" duration="2124000" />
       <workItem from="1524080823346" duration="371000" />
       <workItem from="1524128342884" duration="31145000" />
-      <workItem from="1524728859768" duration="2266000" />
+      <workItem from="1524728859768" duration="2331000" />
     </task>
+    <task id="LOCAL-00001" summary="Project">
+      <created>1524733568119</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1524733568119</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44559000" />
+    <option name="totallyTimeSpent" value="44624000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16614583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -388,6 +380,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
