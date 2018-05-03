@@ -37,7 +37,7 @@ class Product_con extends PDOC
         {
             $pdo = $this->connect();
             $pdo -> beginTransaction();
-            $sql = $pdo -> prepare('insert into user values (?,?,?,?,?)');
+            $sql = $pdo -> prepare('insert into products values (?,?,?,?,?)');
             $sql->bindParam(1,$name);
             $sql->bindParam(2,$amount);
             $sql->bindParam(3,$price);
@@ -68,6 +68,7 @@ class Product_con extends PDOC
 
     }
 
+
     //update product amount
     public function updateAmount($product)
     {
@@ -82,7 +83,7 @@ class Product_con extends PDOC
             $sql = $pdo->prepare('update products set amount = ? where name = ?');
             #wenn mitgabewerte der Funktion als werte inserted werden, müssen sie
             #nachträglich übergeben werden
-            $amount = $product->getVisitors();
+            $amount = $product->getAmount();
             $name = $product->getName();
             $sql->bindParam(1, $amount);
             $sql->bindParam(2, $name);

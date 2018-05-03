@@ -43,7 +43,7 @@ private $username;
 
     public function login($username,$password)
     {
-        if ($this->username==$username&&$this->password==$password)
+        if ($this->username == $username && $this->password == $password)
         {
             return true;
         }

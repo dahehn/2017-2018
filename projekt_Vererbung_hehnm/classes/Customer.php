@@ -33,6 +33,8 @@ private $age;
 
     public function setAge($age): void
     {
+        if(!ctype_digit($age))
+            throw new Exception('Invalid input');
         $this->age = $age;
 
     }

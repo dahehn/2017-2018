@@ -7,5 +7,6 @@
     <br>
     <input type="submit" name="register" value="Register"> <input type="submit" name="login" value="Login">
 </form>
+<?php echo $message ?>
 </body>
 </html>

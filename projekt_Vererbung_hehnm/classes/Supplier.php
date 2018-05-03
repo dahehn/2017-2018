@@ -11,7 +11,7 @@ private $address;
     {
         parent::__construct($password,$username);
         $this->setCompanyName($companyName);
-        $this->address=$address;
+        $this->address = $address;
     }
 
     public function getCompanyName()
@@ -21,12 +21,12 @@ private $address;
 
     public function setCompanyName($companyName)
     {
-        if($companyName==true)
+        if($companyName == true)
         {
             $companyName='private';
-            $this->companyName=$companyName;
+            $this->companyName = $companyName;
         }
-        if($companyName=='')
+        if($companyName == '')
             throw new Exception('Enter a Name for your Company');
         $this->companyName = $companyName;
     }
@@ -42,8 +42,5 @@ private $address;
     {
         $this->address = $address;
     }
-
-
-
 }
 

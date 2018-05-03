@@ -26,17 +26,12 @@ private $ageRestriction;
 
     public function setAmount($amount): void
     {
-        if ($this->amount += $amount > 0 || $amount == 0 || !is_int($amount))
-            throw new Exception('Impossible amount');
-        $this->amount += $amount;
-
+        $this->amount = $amount;
     }
 
 
     public function setAgeRestriction($ageRestriction): void
     {
-        if($ageRestriction<0 || !is_int($ageRestriction))
-            throw new Exception('Invalid restriction');
         $this->ageRestriction = $ageRestriction;
     }
 
@@ -51,8 +46,6 @@ private $ageRestriction;
 
     public function setPrice($price): void
     {
-        if($price == '' || !is_double($price) || $price < 0)
-            throw  new Exception('Invalid price');
         $this->price = $price;
     }
 
