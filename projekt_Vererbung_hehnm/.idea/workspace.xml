@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cafd4f01-cc9c-46d9-8b6f-fd5939f47dcc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../SEWPLF2_hehnm/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../SEWPLF2_hehnm/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/classes/Customer.php" afterPath="$PROJECT_DIR$/classes/Customer.php" />
-      <change beforePath="$PROJECT_DIR$/classes/Product.php" afterPath="$PROJECT_DIR$/classes/Product.php" />
-      <change beforePath="$PROJECT_DIR$/classes/Product_con.php" afterPath="$PROJECT_DIR$/classes/Product_con.php" />
-      <change beforePath="$PROJECT_DIR$/classes/Supplier.php" afterPath="$PROJECT_DIR$/classes/Supplier.php" />
-      <change beforePath="$PROJECT_DIR$/classes/User.php" afterPath="$PROJECT_DIR$/classes/User.php" />
-      <change beforePath="$PROJECT_DIR$/cont/_base.php" afterPath="$PROJECT_DIR$/cont/_base.php" />
-      <change beforePath="$PROJECT_DIR$/view/add_view.php" afterPath="$PROJECT_DIR$/view/add_view.php" />
-      <change beforePath="$PROJECT_DIR$/view/loggin_v.php" afterPath="$PROJECT_DIR$/view/loggin_v.php" />
-      <change beforePath="$PROJECT_DIR$/view/market_v.php" afterPath="$PROJECT_DIR$/view/market_v.php" />
-    </list>
+    <list default="true" id="cafd4f01-cc9c-46d9-8b6f-fd5939f47dcc" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -141,8 +129,8 @@
       <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classes/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="45" column="63" lean-forward="false" selection-start-line="45" selection-start-column="63" selection-end-line="45" selection-end-column="63" />
+            <state relative-caret-position="465">
+              <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
               <folding>
                 <element signature="n#setPassword#0;n#User#0;n#!!top" expanded="false" />
                 <element signature="n#getPassword#0;n#User#0;n#!!top" expanded="false" />
@@ -376,7 +364,7 @@
       <workItem from="1524128342884" duration="31145000" />
       <workItem from="1524728859768" duration="7793000" />
       <workItem from="1524937649652" duration="1543000" />
-      <workItem from="1525291279702" duration="6669000" />
+      <workItem from="1525291279702" duration="6695000" />
     </task>
     <task id="LOCAL-00001" summary="Project">
       <created>1524733568119</created>
@@ -389,7 +377,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58298000" />
+    <option name="totallyTimeSpent" value="58324000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -856,8 +844,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="45" column="63" lean-forward="false" selection-start-line="45" selection-start-column="63" selection-end-line="45" selection-end-column="63" />
+        <state relative-caret-position="465">
+          <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
           <folding>
             <element signature="n#setPassword#0;n#User#0;n#!!top" expanded="false" />
             <element signature="n#getPassword#0;n#User#0;n#!!top" expanded="false" />
