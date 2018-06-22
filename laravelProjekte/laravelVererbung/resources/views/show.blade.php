@@ -1,0 +1,21 @@
+<html>
+<body>
+<h2>User information</h2>
+<p>
+    <strong>Name</strong>
+    {{$projectUser->name}}
+</p>
+<p>
+    <strong>Age</strong>
+    {{$projectUser->age}}
+</p>
+<p>
+    <strong>E-mail</strong>
+    {{$projectUser->email}}
+</p>
+<p>
+    <strong>id</strong>
+    {{$projectUser->id}}
+</p>
+</body>
+</html>
